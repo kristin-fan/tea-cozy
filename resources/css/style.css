@@ -2,6 +2,9 @@ body {
   margin: 0px;
   padding: 0px;
   font-size: 22px;
+  font-family: Helvetica;
+  color: seashell;
+  opacity: 0.9px;
 }
 
 a, p, h1, h2, h3, h4 {
@@ -21,31 +24,63 @@ nav { display: flex; justify-content: flex-end; flex-wrap: wrap;}
 nav span { display:inline-flex; padding: 0 10px; }
 
 .content {
-  position: absolute;
-  padding-top: 70px;
+  position: relative;
   background-color: #000;
   width: 100%;
   text-align: center;
 }
 
-.mission {
+/* mission */
+#mission {
   position: relative;
   background-image: url(../images/img-mission-background.jpg);
-  background-size: 1200px 800px;
   background-repeat: no-repeat;
   background-position: center;
   height: 700px;
   display: flex; align-items: center;
   margin: 0 auto;
-  padding: 0 5px;
+  padding-top: 70px;
 }
 
-.mission .headline {
+#mission .headline {
   width: 100%;
   background-color: #000;
   text-align: center;
+  padding: 0 5px;
 }
 
-.products { display: flex; align-items:center; flex-wrap: wrap; justify-content: center; flex:0 1 1000px; margin: 0 auto; }
-.products .tea { padding: 0 15px; }
-.products .tea p {margin:10px 10px 25px 10px; }
+/* featured tea */
+#featured-tea { margin: 0 0 80px 0;  padding-top: 70px;}
+#featured-tea .products { display: flex; align-items:center; flex-wrap: wrap; justify-content: center; flex:0 1 1000px; margin: 0 auto; }
+#featured-tea .products .tea { padding: 0 15px; }
+#featured-tea .products .tea p {margin:10px 10px 25px 10px; }
+
+/* location */
+#locations {
+  background-image: url(../images/img-locations-background.jpg);
+  background-repeat:no-repeat;
+  background-position: center;
+  height: 500px;
+  display: flex;
+  flex-flow: column wrap;
+  justify-content: center;
+  align-items: center;
+  padding-top: 70px;
+}
+#locations .headline h2 { margin: 0 0 15px 0;}
+#locations .location-list { display: flex; }
+#locations .location h3 {padding: 0; margin: 0;}
+#locations .location {
+  display: flex; flex-flow: column wrap; justify-content: space-around;
+  width: 300px; height: 300px; margin: 0 20px;
+  background-color: #000; opacity: 1;
+}
+
+#contact { height: 200px;}
+
+.footer {
+  background-color: #000;
+  position: relative;
+  height: 60px;
+  padding: 10px 20px;
+}
