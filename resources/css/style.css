@@ -1,0 +1,51 @@
+body {
+  margin: 0px;
+  padding: 0px;
+  font-size: 22px;
+}
+
+a, p, h1, h2, h3, h4 {
+  font-family: Helvetica;
+  color: seashell;
+}
+
+/* Header */
+.header {
+  height: 69px; background-color: #000; position: fixed; width: 100%;
+  display: flex; align-items: center; justify-content: space-between;
+  border-bottom: solid 1px seashell;
+  z-index: 100; font-size: 22px;
+}
+.header img { height: 50px; padding: 0 10px; }
+nav { display: flex; justify-content: flex-end; flex-wrap: wrap;}
+nav span { display:inline-flex; padding: 0 10px; }
+
+.content {
+  position: absolute;
+  padding-top: 70px;
+  background-color: #000;
+  width: 100%;
+  text-align: center;
+}
+
+.mission {
+  position: relative;
+  background-image: url(../images/img-mission-background.jpg);
+  background-size: 1200px 800px;
+  background-repeat: no-repeat;
+  background-position: center;
+  height: 700px;
+  display: flex; align-items: center;
+  margin: 0 auto;
+  padding: 0 5px;
+}
+
+.mission .headline {
+  width: 100%;
+  background-color: #000;
+  text-align: center;
+}
+
+.products { display: flex; align-items:center; flex-wrap: wrap; justify-content: center; flex:0 1 1000px; margin: 0 auto; }
+.products .tea { padding: 0 15px; }
+.products .tea p {margin:10px 10px 25px 10px; }
